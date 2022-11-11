@@ -1,0 +1,360 @@
+*{
+    font-family: "Times New Roman", Times, serif;
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    box-sizing: border-box;
+}
+/*màn hình chí*/
+html{
+    background-image: url("./manga-container/main-bg.png");
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Thanh nav */
+.topnav {
+    display: flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+    background-color: #600a0d;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 26px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+.topnav a.active {
+    background-color: #ed1c24;
+    color: white;
+}
+
+.dropdown {
+    overflow: hidden;    
+}
+
+.drop {
+    color: white;
+    background-color:  #600a0d;
+    text-align: center;
+    padding: 25px 26px;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    cursor:pointer;
+}
+
+.dropdown-content {
+  display:none;
+  right:0px;
+  position: fixed;
+  background-color: #f9f9f9;
+  width: 529px;
+  box-shadow: 0px 8px 16px 0px black;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 22px;
+  }
+
+.dropdown:hover .dropdown-content {
+  display:block;
+  overflow:hidden;
+  z-index:1;
+  position: absolute;
+}
+
+.drop2 {
+    color: white;
+    background-color:  #600a0d;
+    text-align: center;
+    padding: 25px 26px;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    cursor:pointer;
+}
+
+.dropdown-content2 {
+  display:none;
+  right:0px;
+  position: fixed;
+  background-color:#f1f2f3;
+  width: 529px;
+  box-shadow: 0px 8px 16px 0px black;
+}
+
+.dropdown-content2 p {
+  color: black;
+  padding: 12px;
+  text-align: left;
+  font-size: 22px;
+  
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display:block;
+  overflow:hidden;
+  z-index:1;
+  position: absolute;
+  right:16.7%;
+}
+
+/* .dropdown:hover .drop {
+    background-color: #ddd;
+    color: black;
+} */
+
+.logo{
+    width:350px;
+    padding: 9px 15px;
+}
+    
+/* Thanh nav */
+
+/*css mành hình chứa*/
+.container {
+    background: url('./manga-container/container-bg.png');
+    border : 2px outset;
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+    border-radius: 5px;
+    width: 750px;
+    height :auto;
+    margin:0;
+    padding:5px;
+
+}
+h1 {
+    text-align :center;
+    background: black;
+    margin :15px;
+    color :white;
+    border-radius:5px;
+    padding: 5px;
+}
+.picture-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-radius: 5px;
+}
+/*Border thông tin*/
+.detail{
+    display: block;
+    border-style: solid;
+    border: auto;
+    width: 500px;
+    height :auto;
+    margin: 20px;
+    padding: 0px;
+    background-color: #fff;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Mô tả*/
+.inf_title{
+    font-size: 20px;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.context{
+    font-size: 18px;
+    margin: 0;
+    padding:10px;
+    background : whitesmoke;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color :black;
+    text-align: left;
+} 
+/*thông tin trạng thái*/
+.description{
+    margin:0;
+    text-align: left;
+    padding-left : 30px;
+}
+.description p{
+    font-size: 18px;
+    margin:5px;
+}
+.description .category {
+    background: #d8fde0;
+    border-radius: 3px;
+    display: inline;
+    padding: 2px 5px;
+}
+a:link, a:visited .category {
+    text-decoration: none;
+}
+/*danh sách truyện*/
+/*list content*/
+.list-chapters{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+
+/*kích thước*/
+.list {
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 50%;
+    align-items: justify;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.list td{
+    border: none;
+    padding: 5px;
+}
+
+.list th {
+    border: none;
+    padding: 8px;
+}
+
+.list tr:nth-child(even){background-color: #f2f2f2;}
+
+.list tr:hover {background-color: #ddd;}
+
+.list th {
+    padding:10px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+/*scroll*/
+.list {
+    overflow: scroll;
+    height: 200px;
+    width: 600px;
+    overflow-x: hidden;
+}
+/*bảng*/
+#table1 {
+    border-collapse: collapse;
+}
+#table1 th,
+#table1 td {
+    width: auto;
+    padding: 8px;
+    overflow: hidden;
+}
+#table1 thead {
+    position: sticky;
+    inset-block-start: 0;
+    background-color: #ddd;
+}
+/*link chapter*/
+.chap{
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.right{
+    text-align: center;
+}
+.list-recommend {
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 50%;
+    align-items: justify;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.list-recommend img{
+    width:35%;
+}
+
+.list-recommend td{
+    border: none;
+    padding: 5px;
+}
+
+.list-recommend th {
+    border: none;
+    padding: 8px;
+}
+
+.list-recommend tr:nth-child(even){background-color: #f2f2f2;}
+
+.list-recommend tr:hover {background-color: #ddd;}
+
+.list-recommend th {
+    padding:10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/*scroll*/
+.list-recommend {
+    overflow: scroll;
+    height: 600px;
+    width: 350px;
+    overflow-x: hidden;
+}
+/*bảng*/
+#table2 {
+    border-collapse: collapse;
+}
+#table2 th,
+#table2 td {
+    width: auto;
+    padding: 8px;
+    overflow: hidden;
+}
+#table2 thead {
+    position: sticky;
+    top:fixed;
+    inset-block-start: 0;
+    background-color: #ddd;
+}
+/*link chapter*/
+.recommend{
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.footer{
+    clear:both;
+    height :100px;
+    width:auto;
+    background-color: #600a0d;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    padding: 25px;
+}
+.main_container{
+    height: auto;
+    margin: 10px;
+    margin-right: auto ;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
